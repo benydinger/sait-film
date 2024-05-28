@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>محصولات</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>پترا شاپ</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">خانه</a></li>
+      <li><a href="products.html" class="active">محصولات</a></li>
+      <li><a href="categories.html">دسته بندی ها</a></li>
+      <li><a href="about_us.html">درباره ما</a></li>
+      <li><a href="contact_us.html">ارتباط با ما</a></li>
+      <li><a href="cart.html">سبد خرید</a></li>
+      <li><a href="profile.html">حساب کاربری</a></li>
+    </ul>
+  </nav>
+  <form id="search"  action="#">
+    <input type="text" placeholder="نام محصول را وارد کنید">
+    <button>جستجو</button>
+  </form>
+</header>
+
+<main>
+  <section class="products">
+    <h2>محصولات</h2>
+
+    <div class="filter">
+      <select>
+        <option value="">مرتب سازی بر اساس</option>
+        <option value="newest">جدیدترین</option>
+        <option value="cheapest">ارزان ترین</option>
+        <option value="expensive">گران ترین</option>
+      </select>
+    </div>
+
+    <div class="product-grid">
+      <div class="product" data-category="electronic">
+        <img src="assets/images/product-1.jpg" alt="نام محصول 1">
+        <h3>نام محصول 1</h3>
+        <p>توضیحات مختصری از محصول 1</p>
+        <span class="price">100,000 ریال</span>
+        <button data-id="1">خرید</button>
+      </div>
+      <p id="error">محصولی یافت نشد!</p>
+
+      <div class="product" data-category="clothing">
+        <img src="assets/images/product-2.jpeg" alt="نام محصول 2">
+        <h3>نام محصول 2</h3>
+        <p>توضیحات مختصری از محصول 2</p>
+        <span class="price">250,000 ریال</span>
+        <button data-id="2">خرید</button>
+      </div>
+
+    </div>
+  </section>
+  <section class="pagination">
+    <ul>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">...</a></li>
+      <li><a href="#">10</a></li>
+      <li><a href="#">بعدی</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>Made with&nbsp;<img src="assets/images/heart.gif" alt="Heart" width="30" height="30">&nbsp;by <span class="author-name">Ali & Nima</span> For Master: Mis. Avaznia </p>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
